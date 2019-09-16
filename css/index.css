@@ -28,6 +28,10 @@ a:link {
     text-decoration-style: solid;
 }
 
+.carousel a{
+    align-items: center;
+}
+
 .v-container {
     width: 80%;
     margin: auto;
