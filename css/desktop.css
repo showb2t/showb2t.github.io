@@ -1,0 +1,58 @@
+body {
+    max-width: 100vw;
+    height: 100vh;
+    background:url("../res/background1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#taskbar {
+    height: 24px;
+    max-height: 25px;
+    padding: 2px 0px 2px 0px;
+    top: 0;
+}
+
+.taskbarapple{
+    margin-left: 15px;
+}
+
+.taskbarIcons {
+    margin-left: 15px;
+}
+
+#notes {
+    width: 15%;
+    position: absolute;
+    right: 20px;
+    z-index: 9;
+}
+
+#notesbody {
+    padding: 10px;
+    text-align: center;
+}
+
+#note {
+    border: none;
+    color: white;
+    overflow: hidden;
+    min-height: 180px;
+}
+
+#notesheader {
+    cursor: pointer;
+    z-index: 10px;
+}
+
+#dock {
+    bottom: -15px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    width: 100%;
+    position: fixed;
+}
+
+.dockIcons {
+    
+}

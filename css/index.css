@@ -1,0 +1,70 @@
+html {
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: CirceRounded;
+    src: url("../res/CirceRounded-Regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: CirceRoundedBold;
+    font-weight: bold;
+    src: url("../res/CirceRounded-AltBold.otf") format("opentype");
+}
+
+@font-face {
+    font-family: CirceRoundedLight;
+    font-weight: lighter;
+    src: url("../res/CirceRounded-ExtraLight.otf") format("opentype");
+}
+
+body {
+    background-color: #fafafa;
+    font-family: CirceRounded ,'Roboto', sans-serif;
+}
+
+a:link {
+    text-decoration-style: solid;
+}
+
+.v-container {
+    width: 80%;
+    margin: auto;
+    padding-top: 110px;
+}
+
+.v-c-heading {
+    font-size: 30px;
+    font-weight: 700;
+    padding-bottom: 40px;
+}
+
+.card-action i{
+    color: black;
+}
+
+footer {
+    margin-top: 30px;
+}
+
+.footer {
+    color: white;
+    margin-bottom: 0px;
+    background-color: black;
+    padding: 0px 20px 5px 20px;
+    font-weight: lighter;
+    font-size: 13px;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #666;
+}
+
+::-webkit-scrollbar-track {
+  background: #eee;
+}
