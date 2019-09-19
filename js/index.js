@@ -8,7 +8,7 @@ $(document).ready(function(){
         link_will_be = "mailto:shobhitmalarya8@gmail.com?Subject=Hello%from%website;";
         msg_body = $('#msg').val();
         link_will_be = link_will_be+"body="+msg_body.replace(" ","%");
-        $('#actual_send_mail').attr("href", link_will_be);
+        $('#actual_link').attr("href", link_will_be);
         $('#actual_send_mail').click();
     });
 
