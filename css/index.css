@@ -22,6 +22,13 @@ html {
 body {
     background-color: #fafafa;
     font-family: CirceRounded ,'Roboto', sans-serif;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
 }
 
 a:link {
@@ -49,17 +56,26 @@ a:link {
 }
 
 footer {
-    margin-top: 30px;
+    margin-top: 40px;
+    color: white;
 }
 
-.footer {
+input, select, textarea{
+    color: #fff;
+}
+
+textarea:focus, input:focus {
+    color: #fff;
+}
+
+/* .footer {
     color: white;
     margin-bottom: 0px;
-    background-color: black;
+    background-color: #263238;
     padding: 0px 20px 5px 20px;
     font-weight: lighter;
     font-size: 13px;
-}
+} */
 
 ::-webkit-scrollbar {
   width: 5px;
