@@ -60,6 +60,17 @@ footer {
     color: white;
 }
 
+#footer-social{
+    font-size: 21px;
+    margin: auto;
+}
+
+#footer-social li{
+    display: inline-block;
+    padding: 10px;
+
+}
+
 input, select, textarea{
     color: #fff;
 }
