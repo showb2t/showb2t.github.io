@@ -2,10 +2,15 @@
 var colors = ["#ede7f6", "#d1c4e9", "#b39ddb", "#9575cd", "#7e57c2", "#673ab7", "#5e35b1", "#512da8", "#4527a0", "#311b92"];
 var bcolors = ["#009688", "#26a69a", "#4db6ac", "#80cbc4",  "#b2dfdb"];
 
-var work_q = ["","","","",""]
+var work_q = ["Focus","","","","Half time already! Keep Working","","","You've made so far,you can do more.","","","Few more minutes"];
 
 
 var pomo = 0;
+
+
+function wait() {
+    
+}
 
 function work() {
     var display = document.querySelector('#timer'),
