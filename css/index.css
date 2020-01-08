@@ -2,6 +2,17 @@ html {
     scroll-behavior: smooth;
 }
 
+.loader {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100vw;
+    height: 100vh;
+    z-index: 9999;
+    background: rgb(77,77,77);
+    padding-top: 30vh;
+}
+
 @font-face {
     font-family: CirceRounded;
     src: url("../res/CirceRounded-Regular.otf") format("opentype");
