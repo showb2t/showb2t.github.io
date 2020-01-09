@@ -9,7 +9,7 @@ html {
     width: 100vw;
     height: 100vh;
     z-index: 9999;
-    background: rgb(77,77,77);
+    background: rgb(0,0,0);
     padding-top: 30vh;
 }
 
