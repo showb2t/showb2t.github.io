@@ -16,18 +16,21 @@ html {
 @font-face {
     font-family: CirceRounded;
     src: url("../res/CirceRounded-Regular.otf") format("opentype");
+    font-display: swap;
 }
 
 @font-face {
     font-family: CirceRoundedBold;
     font-weight: bold;
     src: url("../res/CirceRounded-AltBold.otf") format("opentype");
+    font-display: swap;
 }
 
 @font-face {
     font-family: CirceRoundedLight;
     font-weight: lighter;
     src: url("../res/CirceRounded-ExtraLight.otf") format("opentype");
+    font-display: swap;
 }
 
 body {
