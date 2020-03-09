@@ -1,0 +1,29 @@
+.neumorphic{
+    border-radius: 25px;
+    background: #313131;
+    box-shadow:  20px 20px 60px #141414,
+                -20px -20px 60px #4e4e4e;
+    transition: all 2s;
+}
+/* .neumorphic:active,
+.neumorphic.active {
+    box-shadow: inset 20px 20px 60px #141414,
+                inset -20px -20px 60px #4e4e4e;
+} */
+body {
+    background-color: #313131;
+}
+
+main{
+    display: flex;
+
+}
+
+.nav {
+    height: 52px;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    background-color: black;
+
+}
