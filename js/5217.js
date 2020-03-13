@@ -8,9 +8,9 @@ function notifyMe(text) {
 var d = document.getElementById('neu');
 
 d.onclick = function() {
-    startTimer(60*52);
+    startTimer(60*53);
     notifyMe("Started");
-    d.classList.add("oneseven");
+    d.classList.add("fivetwo");
 };
 
 function startTimer(duration) {
@@ -24,7 +24,7 @@ function startTimer(duration) {
         seconds = seconds < 10 ? "0" + seconds : seconds;
 
         display.textContent = minutes;
-
+        console.log(minutes);
         if (--timer < 0) {
             timer = duration;
         }
