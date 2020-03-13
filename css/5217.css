@@ -1,29 +1,72 @@
-.neumorphic{
+@font-face {
+    font-family: digital-7;
+    src: url("../res/digital-7.regular.ttf") format("opentype");
+    font-display: swap;
+}
+
+body {
+    background-color: #313131;
+}
+
+.neumorphic {
     border-radius: 25px;
     background: #313131;
     box-shadow:  20px 20px 60px #141414,
                 -20px -20px 60px #4e4e4e;
     transition: all 2s;
-}
-/* .neumorphic:active,
-.neumorphic.active {
-    box-shadow: inset 20px 20px 60px #141414,
-                inset -20px -20px 60px #4e4e4e;
-} */
-body {
-    background-color: #313131;
+        
+    height: 217px;
+    width: 217px;    
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+
+    cursor: pointer;
+
+    font-size: 170px;
+    color: #303030;
+    font-family: 'digital-7';
 }
 
-main{
-    display: flex;
-
+.neumorphic.fivetwo {
+box-shadow: 20px 20px 60px #8A2BE2,
+            -20px -20px 60px #4e4e4e;    
 }
 
-.nav {
-    height: 52px;
+.neumorphic.oneseven {
+box-shadow: 20px 20px 60px #12B296,
+            -20px -20px 60px #4e4e4e;
+}
+
+
+.neumorphic.fivetwo:hover {
+    box-shadow:  inset 20px 20px 60px #141414,
+                 inset -20px -20px 60px #4e4e4e;
+    color: #8A2BE2; 
+}
+
+.neumorphic.oneseven:hover {
+    box-shadow:  inset 20px 20px 60px #141414,
+                 inset -20px -20px 60px #4e4e4e;
+    color: #12B296; 
+}
+
+#timer {
+    height: 100%;
     width: 100%;
-    position: fixed;
-    top: 0px;
-    background-color: black;
-
+    padding: : auto;
 }
+
+#centered {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+/**/
