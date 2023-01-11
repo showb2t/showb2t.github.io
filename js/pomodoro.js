@@ -6,7 +6,7 @@ var work_q = ["Focus","","","","Half time already! Keep Working","","","You've m
 
 
 var pomo = 0;
-
+const audio = document.getElementById("zen_alarm");
 
 function wait() {
     
@@ -74,7 +74,7 @@ function breakTime() {
     timer.onTick(format2).onTick(checkColor2);
 
     $('#task_display').text("Break :\)");
-    $('#quotes').text("Chill");
+    $('#quotes').text("Have some water.");
     $('body').css({"background-color":bcolors[0]});
     $('body').css({"color":"black"});
     timer.start();
@@ -103,24 +103,8 @@ function end() {
     $("#cardy").show();
 }
 
-function sound(src) {
-  this.sound = document.createElement("audio");
-  this.sound.src = src;
-  this.sound.setAttribute("preload", "auto");
-  this.sound.setAttribute("controls", "none");
-  this.sound.style.display = "none";
-  document.body.appendChild(this.sound);
-  this.play = function(){
-    this.sound.play();
-  }
-  this.stop = function(){
-    this.sound.pause();
-  }
-}
-
 function Alarm(){
-    var mySound = new sound("./res/zen.mp3");
-    mySound.play();
+    audio.play();
 }
 
 function CountDownTimer(duration, granularity) {
