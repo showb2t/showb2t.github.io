@@ -6,7 +6,11 @@ var work_q = ["Focus","","","","Half time already! Keep Working","","","You've m
 
 
 var pomo = 0;
-const audio = document.getElementById("zen_alarm");
+
+const start = document.getElementById("zen_start");
+const complete = document.getElementById("zen_complete");
+const wow = document.getElementById("zen_wow");
+
 
 function wait() {
     
@@ -30,7 +34,7 @@ function work() {
     $('#quotes').text("Keep Working.");
     $('body').css({"background-color":colors[0]});
     timer.start();
-
+    Alarm(start);
     function format(minutes, seconds) {
         minutes = minutes < 10 ? "0" + minutes : minutes;
         seconds = seconds < 10 ? "0" + seconds : seconds;
@@ -48,7 +52,6 @@ function work() {
             }
         }
         if (ct == 0){
-            Alarm();
             pomo+=1;
             breakTime();
         }
@@ -78,6 +81,7 @@ function breakTime() {
     $('body').css({"background-color":bcolors[0]});
     $('body').css({"color":"black"});
     timer.start();
+    Alarm(complete);
 
     function format2(minutes, seconds) {
         minutes = minutes < 10 ? "0" + minutes : minutes;
@@ -92,19 +96,18 @@ function breakTime() {
             p+=1;
         }
         if (ct == 0){
-            Alarm();
             work();
         }
     }
 }
 function end() {
-    Alarm();
+    Alarm(wow);
     $("#counter").hide();
     $("#cardy").show();
 }
 
-function Alarm(){
-    audio.play();
+function Alarm(e){
+    e.play();
 }
 
 function CountDownTimer(duration, granularity) {

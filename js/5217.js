@@ -8,7 +8,7 @@ function notifyMe(text) {
 var d = document.getElementById('neu');
 
 d.onclick = function() {
-    startTimer(60*53);
+    startTimer(60*52);
     notifyMe("Started");
     d.classList.add("fivetwo");
 };
